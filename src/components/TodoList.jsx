@@ -3,7 +3,7 @@ import TodoItem from './TodoItem'
 
 const TodoList = ({ items, updateTodo }) => {
   return (
-    <div className="tasks">
+    <ul className="list-group">
       {
         !items.length ? <h6 className="font-weight-normal text-danger">Not Available</h6> : (
           items.map(todo => (
@@ -11,7 +11,7 @@ const TodoList = ({ items, updateTodo }) => {
           ))
         )
       }
-    </div>
+    </ul>
   )
 }
 
