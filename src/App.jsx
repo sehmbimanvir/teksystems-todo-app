@@ -15,7 +15,7 @@ function App () {
       status: false,
     }
 
-    let newTodos = [...todos, todo]
+    let newTodos = [todo, ...todos]
     setTodo(newTodos)
   }
 
